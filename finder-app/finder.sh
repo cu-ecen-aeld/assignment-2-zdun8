@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ ! $# -eq 2 ] 
-then 
+if [ ! $# -eq 2 ]
+then
     echo "Invalid number of arguments specified"
     exit 1
 fi
