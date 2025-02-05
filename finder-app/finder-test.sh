@@ -51,7 +51,6 @@ fi
 echo "Removing the old writer utility and compiling as a native application"
 make clean
 make
-file writer > ../fileresult.txt
 
 for i in $( seq 1 $NUMFILES)
 do
@@ -72,3 +71,5 @@ else
 	echo "failed: expected  ${MATCHSTR} in ${OUTPUTSTRING} but instead found"
 	exit 1
 fi
+
+file writer > ../fileresult.txt
